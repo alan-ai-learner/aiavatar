@@ -22,7 +22,7 @@ msgerForm.addEventListener("submit", async (event) => {
 });
 
 const fecthAudioAndText = async (text) => {
-  const textResponse = await fetch("http://rntkk-2409-40e3-5b-56a-2bbf-e5bb-6722-22e7.a.free.pinggy.online/gen_text/", {
+  const textResponse = await fetch("https://rntkk-2409-40e3-5b-56a-2bbf-e5bb-6722-22e7.a.free.pinggy.online/gen_text/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -33,7 +33,7 @@ const fecthAudioAndText = async (text) => {
 
   const textMsg = await textResponse.json();
   const chatText = textMsg.generated_text;
-  const audioResponse = await fetch("http://rntkk-2409-40e3-5b-56a-2bbf-e5bb-6722-22e7.a.free.pinggy.online/gen_audio/", {
+  const audioResponse = await fetch("https://rntkk-2409-40e3-5b-56a-2bbf-e5bb-6722-22e7.a.free.pinggy.online/gen_audio/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
